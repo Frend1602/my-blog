@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Блог</title>
-</head>
+<?php $titleName = "Блог";
+require_once "blocks/head.php" ?>
 <body>
-
+<div class="wrap">
+    <?php require_once "blocks/header.php" ?>
+    <main class="container">
+        <h1>Blog startup</h1>
+    </main>
+    <?php require_once "blocks/footer.php" ?>
 </body>
+</div>
 </html>
