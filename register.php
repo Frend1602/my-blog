@@ -13,8 +13,6 @@
         <input class=register_input type="password" name="repass" id="repass" placeholder="Повторите пароль">
         <div class="error-mess"></div>
         <div class="g-recaptcha" data-sitekey="6LeUhMYqAAAAAEfjZ1tSWcu4ZXvmLZ9GbltA_it8"></div>
-<!--        <div class="text-danger" id="recaptchaError"></div>-->
-
         <button class="register_button" type="submit" id="reg-btn">Зарегистрироваться</button>
     </form>
 </main>
