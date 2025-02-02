@@ -15,8 +15,9 @@
             <button class="auth_button" type="submit" id="auth-btn">Авторизоваться</button>
         </form>
         <?php else: ?>
-            <h2><?= $_COOKIE['login'] ?></h2>
-            <button class="btn" id="exit_btn">Выйти</button>
+            <h2>Личный кабинет</h2>
+            <p>Добро пожаловать <?= $_COOKIE['login'] ?></p>
+            <button class="auth_button" id="exit_btn">Выйти</button>
         <?php endif ?>
     </main>
     <?php require_once "blocks/footer.php" ?>
@@ -66,7 +67,7 @@
                             $(".error-mess").hide();
                             $('#email').val("");
                             $('#pass').val("");
-                            document.location.replace('/');
+                            document.location.replace('/post-create.php');
 
                         } else {
                             $(".error-mess").show();

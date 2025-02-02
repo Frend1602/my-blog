@@ -8,6 +8,7 @@
                 <li><a class="nav-link" href="index.php">Главная</a></li>
             <?php else: ?>
                 <li><a class="nav-link" href="auth.php">Кабинет</a></li>
+                <li><a class="nav-link" href="post-create.php">Добавить статью</a></li>
                 <li><a class="nav-link" href="index.php">Главная</a></li>
             <?php endif ?>
         </ul>
