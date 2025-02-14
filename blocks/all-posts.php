@@ -12,8 +12,8 @@ foreach ($query as $post) {
             <span class='info_author'>By <span class='author_name'>John Deo</span></span>
             <span class='info_date'>Aug 23, 2021</span>
           </div>
-          <p class='all-posts_title'>$post[title]</p></li>";}
-
+          <p class='all-posts_title'>$post[title]</p><a href='post.php?id=$post[id]'>Прочесть</a></li>";
+}
 echo "</ul></div>";
 
 

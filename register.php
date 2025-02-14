@@ -59,6 +59,7 @@
                                 $('#pass').val("");
                                 $('#repass').val("");
                                 grecaptcha.reset();
+                                document.location.replace('/auth.php');
                             } else {
                                 $(".error-mess").show();
                                 $(".error-mess").text(data);

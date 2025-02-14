@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a.text:active,
+a.text:hover,
+a.text {
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    height: 100%;
+    font-family: "Sen", serif;
+}
+main{
+    flex: 1 1 auto;
+}
+.wrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 80px;
+    margin: 0 auto;
+}

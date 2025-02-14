@@ -29,6 +29,6 @@ if($user->id == 0) {
     echo "Неверный пользователь";
 }
 else{
-    setcookie('login', $user->username, time() + 3600 * 24 * 30, "/");
+    setcookie('login', $user->email, time() + 3600 * 24 * 30, "/");
     echo "Done";
 }

@@ -11,7 +11,7 @@ echo "
     <img src='$post[img]' alt=''>
     <p class='last-post_title'>$post[title]</p>
     <p class='last-post_intro'>$post[preview]</p>
-    <a href='' class='last-post_btn btn'>Прочитать</a>
+    <a href='/post.php?id=$post[id]' class='last-post_btn btn'>Прочитать</a>
 </div>
 </div>
  ";
