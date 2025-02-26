@@ -16,7 +16,7 @@ require_once "blocks/head.php" ?>
 <div class="wrap">
     <?php require_once "blocks/header.php" ?>
     <main>
-        <section class=" container">
+        <section class=" container full-post">
             <h3><?= $titleName = $post['title']; ?></h3>
             <img src='<?= $post['img'] ?>' alt=''>
             <p class="text"><?= $post['text'] ?></p>

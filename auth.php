@@ -31,23 +31,31 @@ require_once "blocks/head.php" ?>
             </form>
         </main>
     <?php else: ?>
-    <main class="dashboard container ">
-        <div class="dashboard_header">
-            <h2 class="dashboard_title">Личный кабинет</h2>
-            <span class="dashboard_welcome">Добро пожаловать <b><?= $user[0]['username'] ?></b></span>
-            <button class="btn" id="exit_btn">Выйти</button>
-        </div>
-        <ul class="auth_all-posts">
-            <?php
-            foreach ($user as $post) {
-                echo "<li class='post-list_item'>
-                        <p class='all-posts_title'>$post[title]</p>
-                        <p>$post[preview]</p>
-                        <a href='post.php?id=$post[id]'>Прочесть</a>
-                        </li>";
-            } ?>
-        </ul>
-    </main>
+        <main class="dashboard container ">
+            <div class="dashboard_header">
+                <h2 class="dashboard_title">Личный кабинет</h2>
+                <span class="dashboard_welcome">Добро пожаловать <b><?= $user[0]['username'] ?></b></span>
+                <button class="btn" id="exit_btn">Выйти</button>
+            </div>
+            <ul class="auth_all-posts">
+                <?php foreach ($user as $post): ?>
+                    <li class='post-list_item dashboard-post'>
+                        <div>
+                            <p class='all-posts_title'><?= $post['title'] ?></p>
+                            <p><?= $post['preview'] ?></p>
+                            <div class="btn-block">
+                                <a class="btn" href='update.php?id=<?= $post['id'] ?>'>Редактировать</a>
+                                <form method="post" action='/ajax/del-post.php'>
+                                    <input type='hidden' name='delete_post' value='<?= $post['id'] ?>'>
+                                    <button class="btn btn-del" type="submit">Удалить</button>
+                                </form>
+                            </div>
+                        </div>
+                        <img class="dashboard-post-img" src="<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </main>
     <?php endif ?>
 
     <?php require_once "blocks/footer.php" ?>

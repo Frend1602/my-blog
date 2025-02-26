@@ -1,8 +1,8 @@
-.register, .auth, .post{
+.register, .auth, .post {
     padding: 100px 80px;
 }
 
-.register h2, .auth h2, .post h2{
+.register h2, .auth h2, .post h2 {
     text-align: center;
     font-size: 48px;
     font-weight: 700;
@@ -10,7 +10,7 @@
     margin-bottom: 60px;
 }
 
-.register_form, .auth_form, .post_form{
+.register_form, .auth_form, .post_form {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -18,31 +18,32 @@
     margin: 0 auto;
 }
 
-.register_input, .auth_input, .post_input{
+.register_input, .auth_input, .post_input {
     padding: 24px;
     border-radius: 2px;
     border: 1px solid #6D6E7680;
     font-size: 16px;
 }
-.register_input::placeholder, .auth_input::placeholder, .post_input::placeholder{
+
+.register_input::placeholder, .auth_input::placeholder, .post_input::placeholder {
     font-size: 16px;
     color: #232536;
 }
 
-.post_form textarea{
+.post_form textarea {
     font-family: "Sen", serif;
     min-height: 400px;
     font-size: 16px;
     color: #232536;
 }
 
-.post_form textarea::placeholder{
+.post_form textarea::placeholder {
     font-family: "Sen", serif;
     font-size: 16px;
     color: #232536;
 }
 
-.error-mess{
+.error-mess {
     display: none;
     padding: 24px;
     border-radius: 2px;
@@ -50,7 +51,7 @@
 
 }
 
-.register_button, .auth_button, .btn{
+.register_button, .auth_button, .btn {
     border: none;
     color: #232536;
     background-color: #FFD050;
@@ -61,19 +62,22 @@
     transition: 500ms ease;
 }
 
-.register_button:hover, .auth_button:hover, .btn:hover{
+.register_button:hover, .auth_button:hover, .btn:hover {
     color: #fff;
 }
-.dashboard{
+
+.dashboard {
     width: 100%;
 }
-.dashboard_header{
+
+.dashboard_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.dashboard_title{
+
+.dashboard_title {
     flex-grow: 1;
     font-size: 48px;
     font-weight: 700;
@@ -83,7 +87,7 @@
     font-size: 24px;
 }
 
-.dashboard .btn{
-padding: 5px;
+.dashboard .btn {
+    padding: 5px 10px;
     margin-left: 20px;
 }
